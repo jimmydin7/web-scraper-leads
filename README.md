@@ -3,7 +3,7 @@
 A modern, professional Flask web application for lead generation through web scraping. Designed for freelancers and businesses to find potential clients with email addresses.
 
 ![Searching page](imgs/1.png)
-![Results page]((imgs/2.png)
+![Results page](imgs/2.png)
 
 ## Features
 
