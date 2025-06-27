@@ -1,30 +1,90 @@
-# Business Website Link Scraper
+# Lead Generation Pro - Web Scraping Tool
 
-This Python tool uses Selenium to search Google for business websites based on a topic (keyword) and a location. It extracts and returns links to relevant websites from search results.
+A modern, professional Flask web application for lead generation through web scraping. Designed for freelancers and businesses to find potential clients with email addresses.
 
-## 💡 What It Does
+## Features
 
-Users input a **topic** (like "barber") and a **place** (like "london"), and the script returns a list of business website links matching that query.
+- **Modern Dark UI**: Professional black-themed interface with smooth animations
+- **Intelligent Search**: Target prospects by keywords and location
+- **Real-time Progress**: Live updates during scraping process
+- **Multiple Export Options**: Download results as Excel (.xlsx), Text (.txt), or copy to clipboard
+- **CAPTCHA Handling**: Interactive browser window for solving CAPTCHAs
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 
-For example:
+## Installation
 
-- **Input:** `barber` + `london`
-- **Output:** 70+ links to barbershops in London
+1. **Clone or download the project files**
 
-## 📦 Features
+2. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- Google search automation using Selenium
-- Captures up to 90 Google results (9 pages)
-- Skips duplicate domains
-- Outputs results to:
-  - Console
-  - `output.txt` (all unique website links)
-  - `output.xlsx` (if emails were being used — disabled in this version)
-## How to use
-1. clone repository
-2. install requirements (py -m pip install -r requirements.txt)
-3. install google chromedriver that matches your chrome version https://googlechromelabs.github.io/chrome-for-testing/
-4. extract the .exe file and copy its poath
-5. paste the .exe path on config.txt
-6. Run the script 
-7. enter prompted keywords and press enter after completing the captcha
+3. **Download ChromeDriver:**
+   - Visit https://googlechromelabs.github.io/chrome-for-testing/
+   - Download the version that matches your Chrome browser
+   - Place `chromedriver.exe` in the project folder
+   - Update the path in `config.txt`
+
+4. **Run the application:**
+   ```bash
+   python app.py
+   ```
+
+5. **Open your browser and navigate to:**
+   ```
+   http://localhost:5000
+   ```
+
+## Configuration
+
+Update `config.txt` with your ChromeDriver path:
+```
+CHROMEDRIVER_PATH=./chromedriver.exe
+```
+
+## Usage
+
+1. **Enter Search Criteria:**
+   - Keywords: e.g., "web designer freelancer consultant"
+   - Location: e.g., "New York", "London", "San Francisco"
+
+2. **Start Scraping:**
+   - Click "Start Lead Generation"
+   - Solve any CAPTCHAs in the browser window that opens
+   - Wait for the scraping process to complete
+
+3. **Export Results:**
+   - Download as Excel spreadsheet
+   - Download as plain text file
+   - Copy all results to clipboard
+
+## How It Works
+
+The tool searches Google for businesses/professionals in your specified location with the keywords you provide, specifically looking for pages that contain "@gmail.com" to find contact information. It extracts unique domains from the search results across multiple pages.
+
+## Important Notes
+
+- Make sure ChromeDriver version matches your Chrome browser version
+- The tool opens a browser window for CAPTCHA solving - do not close it during scraping
+- Results are automatically saved to `output.txt` in addition to the web interface
+- Scraping progress is logged to `scraping.log`
+
+## Technical Details
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Web Scraping**: Selenium WebDriver
+- **Export**: pandas, openpyxl
+- **Styling**: Modern CSS with dark theme and animations
+
+## Support
+
+For issues or questions:
+1. Check that ChromeDriver is properly configured
+2. Ensure your Chrome browser is up to date
+3. Verify all dependencies are installed correctly
+
+---
+
+Built with ❤️ for professional lead generation.
