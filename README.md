@@ -2,14 +2,16 @@
 
 A modern, professional Flask web application for lead generation through web scraping. Designed for freelancers and businesses to find potential clients with email addresses.
 
+![Searching page](imgs/1.png)
+![Results page]((imgs/2.png)
+
 ## Features
 
 - **Modern Dark UI**: Professional black-themed interface with smooth animations
-- **Intelligent Search**: Target prospects by keywords and location
-- **Real-time Progress**: Live updates during scraping process
+- **Intelligent Search**: Target leads by keywords and location
+- **Real-time Progress**: Live updates (with js) during scraping process
 - **Multiple Export Options**: Download results as Excel (.xlsx), Text (.txt), or copy to clipboard
 - **CAPTCHA Handling**: Interactive browser window for solving CAPTCHAs
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 
 ## Installation
 
@@ -23,8 +25,7 @@ A modern, professional Flask web application for lead generation through web scr
 3. **Download ChromeDriver:**
    - Visit https://googlechromelabs.github.io/chrome-for-testing/
    - Download the version that matches your Chrome browser
-   - Place `chromedriver.exe` in the project folder
-   - Update the path in `config.txt`
+   - Update the chromedriver.exe path in `config.txt`
 
 4. **Run the application:**
    ```bash
