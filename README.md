@@ -1,13 +1,13 @@
-# Lead Generation Pro - Web Scraping Tool
+# Businesses Web Scraper
 
-A modern, professional Flask web application for lead generation through web scraping. Designed for freelancers and businesses to find potential clients with email addresses.
+Web scraping tool to find businesses' links and emails on a certain niche & place
 
 ![Searching page](imgs/1.png)
 ![Results page](imgs/2.png)
 
 ## Features
 
-- **Modern Dark UI**: Professional black-themed interface with smooth animations
+- **Modern Dark UI**: black themed interface with smooth animations
 - **Intelligent Search**: Target leads by keywords and location
 - **Real-time Progress**: Live updates (with js) during scraping process
 - **Multiple Export Options**: Download results as Excel (.xlsx), Text (.txt), or copy to clipboard
@@ -74,7 +74,7 @@ The tool searches Google for businesses/professionals in your specified location
 ## Technical Details
 
 - **Backend**: Flask (Python)
-- **Frontend**: HTML5, CSS3, JavaScript
+- **Frontend**: html, css, js, tailwindCSS
 - **Web Scraping**: Selenium WebDriver
 - **Export**: pandas, openpyxl
 - **Styling**: Modern CSS with dark theme and animations
@@ -88,4 +88,4 @@ For issues or questions:
 
 ---
 
-Built with ❤️ for professional lead generation.
+Built with ❤️ by jim
